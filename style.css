@@ -1,0 +1,53 @@
+:root {
+    --bar-fill: #ff42a1;
+    --tooltip-bg: #42ffa1;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
+
+#title {
+    border: 2px solid;
+    padding: 20px;
+    background: #fff;
+}
+
+.bar,
+#tooltip-bg {
+    transition: opacity 0.5s;
+}
+
+.bar {
+    fill: var(--bar-fill);
+}
+
+.bar:hover {
+    fill: var(--tooltip-bg);
+}
+
+#tooltip-bg {
+    fill: var(--tooltip-bg);
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+#tooltip {
+    font-family: monospace, system-ui;
+}
+
+#svg-title {
+    text-anchor: middle;
+    text-decoration: underline;
+}
+
+.vertical-text {
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
