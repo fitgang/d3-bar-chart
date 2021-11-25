@@ -31,6 +31,9 @@ d3.json(
     // title
     d3.select("h1").text(data.name);
 
+    // descriptio
+    d3.select("p").text(data.description);
+
     // source
     svg
         .append("text")
