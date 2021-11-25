@@ -15,7 +15,10 @@ if (innerWidth < width) {
         height = width;
         padding = 45;
 
-        setTimeout(() => alert("Open on a computer system for better view."), 1000);
+        setTimeout(() => {
+            alert("Open on a computer system for better view.");
+            alert("Click on a bar for details.")
+        }, 5000);
     }
     width = (innerWidth * 4) / 5;
 }
